@@ -1,0 +1,31 @@
+<html>
+    <script>
+        const ourDog = {
+            "name": "Camper",
+            "legs": 4,
+            "tails": 1,
+            "friends": ["everything!"],
+            "bark": "bow-wow"
+            };
+
+        //delete object property
+        delete ourDog.bark;
+
+        //loop through objects in javascript
+        const user = {
+        name: 'John Doe',
+        email: 'john.doe@example.com',
+        age: 25,
+        dob: '08/02/1989',
+        active: true
+        };
+
+        for (let key in user) {
+        console.log(`${key}: ${user[key]}`);
+        //console.log(user[key]);
+        //console.log(key);
+        //why won't this work?
+        console.log(user.key);
+        }
+    </script>
+</html>

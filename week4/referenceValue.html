@@ -1,0 +1,21 @@
+<html>
+    <script>
+        //pass by Reference
+        function updateObject(objectByReference)
+        {
+            objectByReference.name = 'Wheel'
+        }
+
+        var myObj = {
+            name:'Ferris'
+        }
+
+        //pass by Value
+        let ogValue = 3;
+        function updateValue(ogValue)
+        {
+            ogValue += 5;
+            console.log(ogValue)
+        }
+    </script>
+</html>
