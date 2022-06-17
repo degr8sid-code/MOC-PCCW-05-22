@@ -12,7 +12,7 @@
         delete ourDog.bark;
 
         //loop through objects in javascript
-        const user = {
+        let user = {
         name: 'John Doe',
         email: 'john.doe@example.com',
         age: 25,
@@ -27,5 +27,12 @@
         //why won't this work?
         console.log(user.key);
         }
+
+        function myFunc(obj)
+        {
+            obj.name = "Doe John";
+        }
+
+        myFunc(user);
     </script>
 </html>

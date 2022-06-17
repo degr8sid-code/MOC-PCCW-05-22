@@ -1,9 +1,9 @@
 <html>
     <script>
         //pass by Reference
-        function updateObject(objectByReference)
+        function updateObject(myObj)
         {
-            objectByReference.name = 'Wheel'
+            myObj.name = 'Wheel'
         }
 
         var myObj = {
@@ -15,7 +15,11 @@
         function updateValue(ogValue)
         {
             ogValue += 5;
-            console.log(ogValue)
+            //console.log(ogValue);
+            return ogValue;
         }
+        console.log("old value: " + ogValue);
+        let ogValueNew = updateValue(ogValue);
+        console.log("new value after function call" + ogValueNew);
     </script>
 </html>
