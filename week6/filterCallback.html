@@ -1,0 +1,20 @@
+<html>
+    <script>
+        //array of objects
+        const employees = [
+            {name: 'Peter', salary: '15000'},
+            {name: 'James', salary: '20000'},
+            {name: 'Alice', salary: '25000'}
+        ];
+
+        //callback on an array
+        //3 arguments: item, counter, array
+        function isBigEnough(element) {
+            let compare = element.salary > 15000;
+            return compare;
+        }
+
+        const filtered = employees.filter(isBigEnough); 
+        console.log(filtered);
+    </script>
+</html>
