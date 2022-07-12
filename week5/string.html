@@ -5,10 +5,12 @@
 
         //string concatenation
         const ourStr = "I come first. " + "I come second.";
-
+        let stringVar = " I come in between. ";
+        const ourNewStr = "I come first." + stringVar + "I come second." ;
+        
         //string split
-        let A1 = "This is a string";
-        let B1 = A.split(' ')
+        let splitString = "This is a string";
+        let B1 = splitString.split(' ')
         
         //Substring
 
@@ -23,6 +25,9 @@
         //string backticks
         function hey ()
         {return 'hello world';}
+
+        function add ()
+        {return 2+1;}
 
         console.log('The function says ${hey()}');
         //constructing strings with variables
