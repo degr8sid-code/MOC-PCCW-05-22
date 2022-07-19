@@ -1,0 +1,18 @@
+h1 {
+    font-size: 5em;
+    color: green;
+}
+
+.green-items {
+    color: green;
+    font-size: 2em;
+}
+
+.parent {
+    font-size:5em;
+    color:purple;
+}
+
+.child {
+   /*add some property here */
+}
