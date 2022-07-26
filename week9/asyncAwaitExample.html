@@ -1,0 +1,22 @@
+<script>
+
+//always returns a promise
+    async function hey() {
+        console.log("inside hey function");
+        console.log("before response");
+        const response = await fetch('https://api.github.com/users');
+        console.log("response fetched");
+        const users = await response.json();
+        console.log("users are here");
+        return users;
+        //return "this is hey!";
+    }
+
+    console.log("before calling hey");
+    //a is a promise
+    let a = hey ();
+    console.log("After calling hey");
+    console.log(a);
+    a.then( data => console.log(data))
+    console.log("The end");
+</script>
