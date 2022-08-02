@@ -1,0 +1,25 @@
+<html>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 60px);
+      grid-template-rows: repeat(1, 60px);
+      grid-gap: 10px;
+    }
+    .box {
+      background-color: #444;
+      color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+    }
+  </style>
+  <button onclick="step()">Step</button>
+  <div id="grid" class="grid">
+    <div class="box 1">a</div>
+    <div class="box 2">b</div>
+    <div class="box 3">c</div>
+    <div class="box 4">c</div>
+  </div>
+  <script src="./permute.js"></script>
+</html>

@@ -1,3 +1,3 @@
-# Week 9
+# Week 10
 
-In ** Module 9: Asynchronous Code **, you’ll learn how to fetch data from multiple sources without making the user wait for each item to load step by step. Key tools such as promises, async, and await will help you write code for the modern browser and modern user. You’ll practice working with data in an asynchronous environment by completing several map exercises at the end of the module.
+In * Module 10: Introduction to Cybersecurity and Recursion *, you’ll learn about three essential areas of web development as you consider your career. You’ll start with agile methodology. Most teams and projects you will work on will adhere to agile principles and practices. Next, you’ll learn about the foundations of cybersecurity and the public key infrastructure. Finally, you’ll practice solving several recursion problems that you might encounter in a job interview. 
