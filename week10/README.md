@@ -1,0 +1,3 @@
+# Week 9
+
+In ** Module 9: Asynchronous Code **, you’ll learn how to fetch data from multiple sources without making the user wait for each item to load step by step. Key tools such as promises, async, and await will help you write code for the modern browser and modern user. You’ll practice working with data in an asynchronous environment by completing several map exercises at the end of the module.
