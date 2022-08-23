@@ -1,0 +1,28 @@
+<html>
+    <script>
+        //normal function
+        function multiply(a,b)
+        {
+            //add this line to check if exists
+            if (!b) b = 1; 
+            return a*b;
+        }
+
+        function multiply1(a,b=1)
+        {
+            //add this line to check if exists
+            if (!b) b = 1; 
+            return a*b;
+        }
+
+        //another example
+        let guestUser = function (name = "uName", courseCount = 0) {
+            return "Hello " + name + " your course count is " + courseCount;
+        }
+
+        console.log(multiply(5,4));
+        //gives NaN
+        console.log(multiply1(5));
+        console.log(guestUser())
+    </script>
+</html>

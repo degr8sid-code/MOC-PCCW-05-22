@@ -1,3 +1,3 @@
-# Week 10
+# Week 11
 
-In * Module 10: Introduction to Cybersecurity and Recursion *, you’ll learn about three essential areas of web development as you consider your career. You’ll start with agile methodology. Most teams and projects you will work on will adhere to agile principles and practices. Next, you’ll learn about the foundations of cybersecurity and the public key infrastructure. Finally, you’ll practice solving several recursion problems that you might encounter in a job interview. 
+In * Module 11:  Introduction to JavaScript ES6 *, you’ll begin the next part of the course focused on React. In this module, you’ll review basic ES6 and learn some new features in the ES6 toolbox. Mastering this syntax will be essential for you to code in React in the coming modules.

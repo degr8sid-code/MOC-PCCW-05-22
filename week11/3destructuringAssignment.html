@@ -1,0 +1,33 @@
+<html>
+    <script>
+        let a,b,rest;
+        [a,b,rest] = [5, 10, 15, 20, 25];
+        console.log(a);
+
+        //in objects
+        let c,d,rest1;
+        [a,b,...rest1] = {a:5, b:10, c:15, d:20, e:25};
+        console.log(arest);
+
+        //using return parameters from functions
+        function newFunc()
+        {
+            return 1,2,3,4;
+        }
+
+        const[e,f] = func();
+
+        //function with object
+        const user = {
+            name: John,
+            id: 12259,
+            city: London
+        }
+
+        function userId({id}) {
+            return id;
+        }
+
+        console.log(userId(user));
+    </script>
+</html>

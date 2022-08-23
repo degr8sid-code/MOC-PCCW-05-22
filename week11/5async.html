@@ -1,0 +1,19 @@
+<html>
+    <script>
+        function greeting()
+        {
+            return "Hello World";
+        }
+        //arrow function
+        var greeting = () => "Hello World";
+
+        //callback
+        var numbers  = ['one', 'two', 'three'];
+        var output = numbers.map(function(label) 
+        {
+            return label.length;
+        });
+        //callback with arrow
+        var output = numbers.map(label => label.length);
+    </script>
+</html>
