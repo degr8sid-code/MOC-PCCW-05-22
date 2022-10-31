@@ -1,24 +1,30 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React from 'react';
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
+    console.log("Load navigation bar")
     return (
-        <nav className="navbar navbar-expand-lg bg-light">
-            <div className="container-fluid">
-                <Link className="navbar-brand" to="#">navbar</Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <div>
+             <nav className="navbar navbar-expand-lg bg-light">
+                <div className="container-fluid">
+                    <Link className="navbar-brand" to="#">React Booklist App</Link>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/">Book List</Link>
-                        </li>
-                    </ul>
-
+                                <Link className="nav-link active" aria-current="page" to="/">Booklist</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link active" aria-current="page" to="/Favourites">Favourites</Link>
+                            </li>
+                        </ul>
+                        
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav> 
+        </div>
     )
 }
 

@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.books {
+  display: flex;
+}
