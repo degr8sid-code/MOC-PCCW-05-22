@@ -1,0 +1,3 @@
+# Week 17
+
+In * Module 17: Working With React Components *, you’ll focus on web components and routing. In your first exercise, you’ll create simple Bootstrap web components, custom web components, and then convert them to React components. In the second exercise, you’ll learn how to create a single-page application (SPA) and learn when to use a SPA versus a multi-page application. Finally, you’ll bring it all together by completing an exercise where you’ll create the routing on a page with a Bootstrap navigation bar.

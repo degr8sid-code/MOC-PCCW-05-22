@@ -10,7 +10,7 @@ const Booklist = () => {
 
     //replacing fetch with axios
     const fetchData = () => {
-        fetch('http://localhost:5000/api')
+        fetch(API_URL)
         .then(res => res.json())
         .then(books => setBooks(books))
     }

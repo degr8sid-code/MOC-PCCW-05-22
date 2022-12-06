@@ -13,7 +13,7 @@ function App() {
     //   <Booklist />
     // </div>
     <>
-    {/* <Router>
+    { <Router>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Booklist />}>
@@ -21,8 +21,8 @@ function App() {
         <Route exact path="/Favourites" element={<Favourites />}>
         </Route>
       </Routes>
-    </Router> */}
-    <Products />
+    </Router> }
+
   </>
   );
 }
