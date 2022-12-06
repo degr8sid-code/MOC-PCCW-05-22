@@ -5,7 +5,15 @@ h1 {
 
 .green-items {
     color: green;
+}
+
+#green-item {
     font-size: 2em;
+}
+
+.red-items {
+    color:red;
+    font-size: 30em;
 }
 
 .parent {
@@ -15,4 +23,9 @@ h1 {
 
 .child {
    /*add some property here */
+   font-size: 2em;
+}
+
+li {
+    color: blue;
 }

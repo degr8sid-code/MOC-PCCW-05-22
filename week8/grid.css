@@ -9,19 +9,23 @@ div:nth-of-type(odd) {
 }
 
 .content {
-    display: grid;
-    /*grid-template-columns: 1fr 1fr 1fr;*/
-    grid-template-columns: repeat(6,1fr);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(6,1fr); */
     gap: 5px;
-    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
-    grid-template-rows: repeat(3,150px);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: repeat(3,150px); */
 }
 
 .one {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
 }
 
 .two {
-    grid-column: 3 / 6;  
+    /* grid-column: 3 / 6;   */
+}
+
+.three {
+    grid-row: 2 / 4;
 }

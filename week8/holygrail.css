@@ -11,7 +11,7 @@ header, footer {
 }
 
 header, aside, article, footer {
-    border: solid;
+    border: dotted;
     background-color: silver;
     font-size: 2em;
 }
