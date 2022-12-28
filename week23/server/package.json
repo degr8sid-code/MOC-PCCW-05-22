@@ -4,18 +4,21 @@
   "description": "sample server that connects with MongoDb and has Docker file",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parse": "^0.1.0",
+    "body-parser": "^1.20.1",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "express-graphql": "^0.12.0",
     "graphql": "^15.8.0",
     "lowdb": "^5.0.5",
     "mongoose": "^6.8.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "swagger-ui-express": "^4.6.0"
   }
 }
