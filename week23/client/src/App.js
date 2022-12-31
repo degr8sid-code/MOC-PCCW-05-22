@@ -2,12 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import Navibar from './components/Navibar';
 import { useState } from 'react';
-import Task from './components/Task';
+import TodoTask from './components/TodoTask';
 
 function App() {
   return (
     <div id = "container" >
-      <Task />
+      <TodoTask />
     </div>
   );
 }
