@@ -37,3 +37,11 @@
   }
 }
 
+.iwt {
+  display: inline-flex;
+  margin: 5px;
+}
+
+.box {
+  width: 50%;
+}
