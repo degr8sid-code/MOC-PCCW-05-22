@@ -1,7 +1,11 @@
 const mongoose = require("mongoose");
 
 const MyTodoListSchema = new mongoose.Schema({
-_id: mongoose.Schema.Types.ObjectId,
+taskId: {
+    type: Number,
+    required: true,
+    unique: true
+}, 
 todo: {
 type: String,
 default: "",

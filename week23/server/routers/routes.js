@@ -1,5 +1,5 @@
 const express = require("express");
-// import { createTodo } from '../controllers/controller';
+const cors = require("cors");
 const todolist_controller = require('../controllers/controller')
 const app = express();
 const router = express.Router();

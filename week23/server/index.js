@@ -2,16 +2,25 @@ const path = require('path')
 const express = require('express');
 const app = express();
 const port = 4000;
+const cors = require('cors');
 //lowdb code
 // const low = require("lowdb");
 // const fs = require("lowdb/adapters/FileSync");
 // const adapter = new fs("db.json")
 // const db = low(adapter)
 
+
 // parser for POST
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+var corsOptions = {
+    origin: "http://localhost:8081"
+  };
+
+//use CORS
+app.use(cors(corsOptions));
 
 //swagger setup
 const swaggerJsDoc = require('swagger-jsdoc');
@@ -32,8 +41,8 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 
 //local routes
-app.get('/', (req,res) => {
-    res.send('Hello World')
+app.get('/getHello', (req,res) => {
+    res.send("Hello World")
     // res.send("Some change")
     //displaying lowdb result on browser
     // const results = db.get("items").value()
