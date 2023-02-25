@@ -29,18 +29,20 @@ const MyTodoList = require('../models/model');
 // }  
 
 exports.createTodo = (req, res) => {
-  app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "*");
-    next();
-});
+//   app.use(function(req, res, next) {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.header("Access-Control-Allow-Headers", "*");
+//     next();
+// });
   const todo = new MyTodoList({
-    taskId: req.body.taskId,
-    todo: req.body.todo,
-    priority: req.body.priority,
+    // taskId: req.body.taskId,
+    todo: req.body.todo
+    // priority: req.body.priority,
   });
+  console.log(todo);
   return todo
     .save()
+    .then( (newTodo) => console.log(newTodo))
     .then((newTodo) => {
       return res.status(201).json({
         success: true,
@@ -59,7 +61,7 @@ exports.createTodo = (req, res) => {
 
 //get all todos
 exports.getAllTodo = (req, res) => {
-    res.setHeader("Access-Control-Allow-Origin", "*")
+      res.setHeader("Access-Control-Allow-Origin", "*")
       res.setHeader("Access-Control-Allow-Credentials", "true");
       res.setHeader("Access-Control-Max-Age", "1800");
       res.setHeader("Access-Control-Allow-Headers", "content-type");

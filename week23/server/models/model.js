@@ -1,23 +1,23 @@
 const mongoose = require("mongoose");
 
 const MyTodoListSchema = new mongoose.Schema({
-taskId: {
-    type: Number,
-    required: true,
-    unique: true
-}, 
+// taskId: {
+//     type: Number,
+//     required: true,
+//     unique: true
+// }, 
 todo: {
 type: String,
 default: "",
 required: true
 },
-priority: {
-    type: String,
-    default: "high",
-    required: true
-    },
+// priority: {
+//     type: String,
+//     default: "high",
+//     required: true
+//     },
 });
-const MyTodoList = mongoose.model("MyTodoList", MyTodoListSchema);
+const MyTodoList = mongoose.model("MyTodoList", MyTodoListSchema, 'colltodolist');
 module.exports = MyTodoList;
 
 //This is pretty much straight forward. 

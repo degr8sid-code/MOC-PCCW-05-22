@@ -13,12 +13,18 @@ function TodoTask() {
             return
         }
         const newTodos = [todo, ...todos];
+        const json = JSON.stringify({todo: todo.text});
         setTodos(newTodos);
-        console.log(todos);
+        console.log(todo);
+        console.log(json);
         try {
-            await axios.post("http://localhost:5035/api/todos", {
-             todo
+            console.log("trying post")
+            await axios.post("http://localhost:5035/api/todos", json, {
+                headers: {
+                    'Content-Type' : 'application/json'
+                }
             });
+            console.log("trying post")
           } catch (error) {
             console.log(error);
           }
