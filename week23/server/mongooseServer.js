@@ -7,7 +7,8 @@ import dotenv from 'dotenv';
 import morgan from 'morgan';
 import helmet from 'helmet';
 // import router from '../routers/routes';
-
+// import { router } from '../routers/routes.js';
+import authRoutes from "../routes/authRoutes.js"
 // MIDDLEWARE CONFIGURATIONS
 dotenv.config();
 const app = express();
@@ -32,7 +33,8 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 // app.use(cors({
 //   origin: 'http://localhost:3000',
 // }))
-
+// ROUTES
+app.use("/api/", authRoutes);
 // MONGOOSE SETUP
 const PORT = process.env.PORT || 6001;
 mongoose

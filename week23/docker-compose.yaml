@@ -1,0 +1,43 @@
+version: "3"
+
+services:
+  client:
+    build: 
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+  server:
+    build: 
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    # depends_on:
+    #   - database
+    environment:
+      NODE_ENV: production
+      PORT: 3001
+      MONGO_URI: mongodb+srv://sidrah:sidrah@cluster0.yidsza6.mongodb.net/dbtodolist?retryWrites=true&w=majority
+  # api:
+  #   build: ./api
+  #   ports:
+  #     - "1337:1337"
+  #   depends_on:
+  #     - database
+  #   environment:
+  #     DATABASE_HOST: database
+  #     DATABASE_PORT: 27017
+  #     DATABASE_NAME: my-database
+  #     DATABASE_USERNAME: sidrah
+  #     DATABASE_PASSWORD: sidrah
+  # database:
+  #   image: mongo:latest
+  #   environment:
+  #     MONGO_INITDB_ROOT_USERNAME: my-username
+  #     MONGO_INITDB_ROOT_PASSWORD: my-password
+  #     MONGO_INITDB_DATABASE: my-database
+  #   volumes:
+  #     - ./data:/data/db

@@ -1,7 +1,7 @@
-// import mongoose from 'mongoose';
-const mongoose = require('mongoose')
-// import {MyTodoList} from '../models/model';
-const MyTodoList = require('../models/model');
+import mongoose from 'mongoose';
+// const mongoose = require('mongoose')
+import {MyTodoList} from '../models/model';
+// const MyTodoList = require('../models/model');
 
 // create new todo
 // module.exports = function createTodo(req, res) {

@@ -1,14 +1,18 @@
-const express = require("express");
-const cors = require("cors");
-const todolist_controller = require('../controllers/controller')
+import express from 'express';
+import cors from 'cors';
+
+// const express = require("express");
+// const cors = require("cors");
+// const todolist_controller = require('../controllers/controller')
 const app = express();
 const router = express.Router();
-router.post('/todos', todolist_controller.createTodo);
-router.get('/todos', todolist_controller.getAllTodo);
+// router.post('/todos', todolist_controller.createTodo);
+// router.get('/todos', todolist_controller.getAllTodo);
 // router.get('/todos', TodoControl.getAllTodos);
 // export default router;
-module.exports = router;
+// module.exports = router;
 
+export default router;
 // app.post("/add_todo", async (request, response) => {
 //     const todo = new MyTodoListModel(request.body);
   
